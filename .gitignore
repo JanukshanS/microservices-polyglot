@@ -1,0 +1,60 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js (item-service)
+item-service/node_modules/
+item-service/dist/
+item-service/build/
+item-service/coverage/
+
+# Python (payment-service)
+payment-service/__pycache__/
+payment-service/*.py[cod]
+payment-service/.pytest_cache/
+payment-service/.mypy_cache/
+payment-service/.ruff_cache/
+payment-service/.coverage
+payment-service/htmlcov/
+payment-service/.venv/
+payment-service/venv/
+
+# Java / Maven (order-service)
+order-service/target/
+order-service/.mvn/wrapper/maven-wrapper.jar
+
+# Spring / Java IDE files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Build folders
+build/
+dist/
+
+# Keep nested test/resources output folders when needed
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
