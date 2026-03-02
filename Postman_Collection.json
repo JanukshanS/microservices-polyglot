@@ -1,0 +1,160 @@
+{
+    "info": {
+        "_postman_id": "c3ea5b6c-f230-4e3e-a841-85e7807755a9",
+        "name": "Polyglot Microservices API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Item Service",
+            "item": [
+                {
+                    "name": "Get All Items",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8080/items",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "items"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Add Item",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Smartwatch\"\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:8080/items",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "items"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Order Service",
+            "item": [
+                {
+                    "name": "Get All Orders",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8080/orders",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "orders"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Place Order",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"item\": \"Laptop\",\n    \"quantity\": 2\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:8080/orders",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "orders"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Payment Service",
+            "item": [
+                {
+                    "name": "Get All Payments",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:8080/payments",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "payments"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Process Payment",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"orderId\": 1,\n    \"amount\": 2500\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:8080/payments/process",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "payments",
+                                "process"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
