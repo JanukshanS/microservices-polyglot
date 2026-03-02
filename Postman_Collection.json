@@ -12,18 +12,14 @@
                     "name": "Get All Items",
                     "request": {
                         "method": "GET",
-                        "header": [],
-                        "url": {
-                            "raw": "http://localhost:8080/items",
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "8080",
-                            "path": [
-                                "items"
-                            ]
-                        }
+                        "url": "http://localhost:8080/items"
+                    }
+                },
+                {
+                    "name": "Get Item By ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "http://localhost:8080/items/0"
                     }
                 },
                 {
@@ -40,17 +36,7 @@
                             "mode": "raw",
                             "raw": "{\n    \"name\": \"Smartwatch\"\n}"
                         },
-                        "url": {
-                            "raw": "http://localhost:8080/items",
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "8080",
-                            "path": [
-                                "items"
-                            ]
-                        }
+                        "url": "http://localhost:8080/items"
                     }
                 }
             ]
@@ -62,18 +48,14 @@
                     "name": "Get All Orders",
                     "request": {
                         "method": "GET",
-                        "header": [],
-                        "url": {
-                            "raw": "http://localhost:8080/orders",
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "8080",
-                            "path": [
-                                "orders"
-                            ]
-                        }
+                        "url": "http://localhost:8080/orders"
+                    }
+                },
+                {
+                    "name": "Get Order By ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "http://localhost:8080/orders/1"
                     }
                 },
                 {
@@ -90,17 +72,7 @@
                             "mode": "raw",
                             "raw": "{\n    \"item\": \"Laptop\",\n    \"quantity\": 2\n}"
                         },
-                        "url": {
-                            "raw": "http://localhost:8080/orders",
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "8080",
-                            "path": [
-                                "orders"
-                            ]
-                        }
+                        "url": "http://localhost:8080/orders"
                     }
                 }
             ]
@@ -112,18 +84,14 @@
                     "name": "Get All Payments",
                     "request": {
                         "method": "GET",
-                        "header": [],
-                        "url": {
-                            "raw": "http://localhost:8080/payments",
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "8080",
-                            "path": [
-                                "payments"
-                            ]
-                        }
+                        "url": "http://localhost:8080/payments"
+                    }
+                },
+                {
+                    "name": "Get Payment By ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "http://localhost:8080/payments/1"
                     }
                 },
                 {
@@ -140,18 +108,7 @@
                             "mode": "raw",
                             "raw": "{\n    \"orderId\": 1,\n    \"amount\": 2500\n}"
                         },
-                        "url": {
-                            "raw": "http://localhost:8080/payments/process",
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "8080",
-                            "path": [
-                                "payments",
-                                "process"
-                            ]
-                        }
+                        "url": "http://localhost:8080/payments/process"
                     }
                 }
             ]
