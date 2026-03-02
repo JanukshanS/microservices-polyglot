@@ -6,20 +6,20 @@ This is a polyglot microservices application consisting of several interconnecte
 
 The project contains the following components:
 
-1. **API Gateway** (`api-gateway`) 
+1. **API Gateway** (`api-gateway`) - **NGINX**
    - Runs on port `8080`
    - Acts as the main entry point for the application.
    - Routes incoming requests to the appropriate downstream microservice.
 
-2. **Item Service** (`item-service`)
+2. **Item Service** (`item-service`) - **Node.js + Express**
    - Runs on port `8081`
    - Manages operations related to items/inventory.
 
-3. **Order Service** (`order-service`)
+3. **Order Service** (`order-service`) - **Spring Boot**
    - Runs on port `8082`
    - Handles the creation and management of orders.
 
-4. **Payment Service** (`payment-service`)
+4. **Payment Service** (`payment-service`) - **Flask (Python)**
    - Runs on port `8083`
    - Processes simulated payments and manages payment states.
 
